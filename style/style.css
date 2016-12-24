@@ -296,8 +296,19 @@ header{
 	position: absolute;
 	width: 320px;
 	height: 330px;
-	background: url(../images/school.jpg) no-repeat 0 center;
 	box-shadow:0 0 40px rgba(0,0,0,.3);
+	background-size: cover;
+}
+.section-2 .block-1-image{
+	background: url(../images/school.png) no-repeat 0 center;
+	background-size: cover;
+}
+.section-2 .block-2-image{
+	background: url(../images/chuzhonggaozhong.png) no-repeat 0 center;
+	background-size: cover;
+}
+.section-2 .block-3-image{
+	background: url(../images/yiduiyi.png) no-repeat 0 center;
 	background-size: cover;
 }
 .section-2 .block-text{
