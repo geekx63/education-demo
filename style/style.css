@@ -331,10 +331,8 @@ header{
 	height: 270px;
 }
 .section-3 .block-2-image{
-	background: url(../images/position.png) no-repeat 0 center;
 	height: 100%;
-	width: 620px;
-	background-size: cover;
+	width: 570px;
 }
 .section-3 .block-2-text{
 	width: 580px;
@@ -483,14 +481,15 @@ footer{
 	background-color: #093c71;
 }
 .connect-section-container{
-	background: url(../images/big-position.png) no-repeat 0 center;
-	background-size: cover;
 	height: 630px;
+	position: relative;
 }
 .connect-section-container .section-3{
 	width: 1200px;
-	position: relative;
 	margin: 0 auto;	
+}
+.connect-section-container #allmap{
+	height: 100%;
 }
 .connect-section-container .block-2-text{
 	position: absolute;
@@ -692,6 +691,9 @@ footer{
 	}
 	.section-2 .block-text{
 		margin-left: 315px;
+	}
+	.section-3 .block-2-image {
+	    width: 350px;
 	}
 	.footer-container{
 		width: 980px;

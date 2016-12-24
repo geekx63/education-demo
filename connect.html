@@ -9,7 +9,7 @@
     <title>联系我们</title>
 
     <link rel="stylesheet" href="style/style.css">
-
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PKI0ZfxHFy8bnPb7gHkTqiWH"></script>
   </head>
   <body>
     <div class="header-container connect-header-container">
@@ -32,6 +32,7 @@
     </div>
     <div class="connect-section-container">
         <!-- section-3 复用home样式-->
+        <div id="allmap"></div>
         <div class="section-3">
             <div class="block-2-text">
                 <div class="text-header">
@@ -41,7 +42,7 @@
                 <div class="text-info">
                     <span class="title">地址</span>
                     <span>:</span>
-                    <span class="sub-title">北京市海淀区万泉河路68号资金大厦北侧</span>
+                    <span class="sub-title">北京市海淀区万泉河路68号紫金大厦北侧</span>
                 </div>
                 <div class="text-info">
                     <span class="title">电话</span>
@@ -69,5 +70,15 @@
             </ul>
         </div>
     </footer>
+    <script type="text/javascript">
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(116.314502,39.972617), 15);
+        map.addControl(new BMap.MapTypeControl());
+        map.setCurrentCity("北京");
+        map.enableScrollWheelZoom(true);
+
+        map.addOverlay(new BMap.Marker(new BMap.Point(116.314502,39.972617)));
+        map.setCenter(new BMap.Point(116.314502,39.972617)); 
+    </script>
   </body>
 </html>
