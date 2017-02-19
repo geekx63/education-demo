@@ -373,6 +373,15 @@ footer{
 	width: 1200px;
 	margin: 0 auto;
 }
+.customer-service{
+	display: none;
+	position: fixed;
+    bottom: 140px;
+    right: 10px;
+    background: #576574;
+    border-radius: 3px;
+    padding: 6px 5px 3px 5px;
+}
 .copy-right{
 	color: #fff;
 	padding-top: 55px;
@@ -663,6 +672,47 @@ footer{
 	padding-left: 17px;
 	line-height: 36px;
 }
+.coroner-section-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.coroner-section-container table{
+	margin-top: 90px;
+	width: 100%;
+}
+.coroner-image{
+	box-sizing: border-box;
+	height: 400px;
+	background-color: #576574;
+	margin: 26px 22px;
+	border-radius: 4px;
+}
+.image-mask{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(149,149,149,.4);
+}
+.image-container{
+	position: relative;
+	width: 500px;
+	height: 510px;
+	margin: 130px auto;
+	border-radius: 6px;
+	background-color: #fff;
+}
+.image-container::before{
+	content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -23px;
+    right: -23px;
+    background: url(../images/close.png) no-repeat 0 center;
+    background-size: cover;
+}
 /*boutique end*/
 
 /*小屏适配 start*/
@@ -742,6 +792,9 @@ footer{
 	}
 	.visa-text .list-items-2{
 		width: 820px;
+	}
+	.coroner-section-container{
+		width: 980px;
 	}
 }
 /*小屏适配 end*/

@@ -14,4 +14,15 @@ $(function(){
     	$('.section-2-content>div').hide();
 		$('#' + $(this).attr('target-data')).fadeIn('swing');
     })
+
+    var qqShow = false;
+    window.onscroll = function(){
+        if(window.scrollY >= 330 && qqShow === false){
+            $('.customer-service').fadeIn();
+            qqShow = true;
+        }else if(window.scrollY < 330 && qqShow === true){
+            $('.customer-service').fadeOut();
+            qqShow = false;
+        }
+    }
 })

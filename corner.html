@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="bookmark" href="/favicon.ico"/>
-    <title>联系我们</title>
+    <title>校园一角</title>
 
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PKI0ZfxHFy8bnPb7gHkTqiWH"></script>
   </head>
   <body>
     <div class="header-container connect-header-container">
@@ -25,37 +24,33 @@
                     <li><a href="boutique.html">精品项目</a></li>
                     <li><a href="visa.html">签证中心</a></li>
                     <!--<li><a href="#">合作与服务</a></li>-->
-                    <li class="active"><a href="connect.html">联系我们</a></li>
-                    <li><a href="corner.html">校园一角</a></li>
+                    <li><a href="connect.html">联系我们</a></li>
+                    <li class="active"><a href="corner.html">校园一角</a></li>
                 </ul>
             </div>
         </header>
     </div>
-    <div class="connect-section-container">
-        <!-- section-3 复用home样式-->
-        <div id="allmap"></div>
-        <div class="section-3">
-            <div class="block-2-text">
-                <div class="text-header">
-                    <span class="title">联系我们</span>
-                    <span class="sub-title">connect us</span>
-                </div>
-                <div class="text-info">
-                    <span class="title">地址</span>
-                    <span>:</span>
-                    <span class="sub-title">北京市海淀区万泉河路68号紫金大厦北侧</span>
-                </div>
-                <div class="text-info">
-                    <span class="title">电话</span>
-                    <span>:</span>
-                    <span class="sub-title">010-121866997</span>
-                </div>
-                <div class="text-info">
-                    <span class="title">邮箱</span>
-                    <span>:</span>
-                    <span class="sub-title">12345678908@gmail.com</span>
-                </div>
-            </div>
+    <div class="coroner-section-container">
+        <table>
+            <tr>
+                <td>
+                    <div class="coroner-image">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="image-mask">
+        <div class="image-container">
+            
         </div>
     </div>
     <footer>
@@ -72,14 +67,6 @@
         </div>
     </footer>
     <script type="text/javascript">
-        var map = new BMap.Map("allmap");
-        map.centerAndZoom(new BMap.Point(116.314502,39.972617), 15);
-        map.addControl(new BMap.MapTypeControl());
-        map.setCurrentCity("北京");
-        map.enableScrollWheelZoom(true);
-
-        map.addOverlay(new BMap.Marker(new BMap.Point(116.314502,39.972617)));
-        map.setCenter(new BMap.Point(116.314502,39.972617)); 
     </script>
   </body>
 </html>
