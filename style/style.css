@@ -680,13 +680,6 @@ footer{
 	margin-top: 90px;
 	width: 100%;
 }
-..coroner-image{,
-	box-sizing: border-box;
-	height: 400px;
-	background-color: #576574;
-	margin: 26px 22px;
-	border-radius: 4px;
-}
 .image-mask{
 	top: 0;
 	left: 0;
@@ -734,7 +727,12 @@ footer{
 .coroner-image19,
 .coroner-image20,
 .coroner-image21{
-	
+	box-sizing: border-box;
+	width:278px;
+	height: 400px;
+	background-color: #576574;
+	margin: 26px 22px;
+	border-radius: 4px;
 }
 /*boutique end*/
 
