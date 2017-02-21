@@ -680,7 +680,7 @@ footer{
 	margin-top: 90px;
 	width: 100%;
 }
-.coroner-image{
+..coroner-image{,
 	box-sizing: border-box;
 	height: 400px;
 	background-color: #576574;
@@ -712,6 +712,29 @@ footer{
     right: -23px;
     background: url(../images/close.png) no-repeat 0 center;
     background-size: cover;
+}
+.coroner-image1,
+.coroner-image2,
+.coroner-image3,
+.coroner-image4,
+.coroner-image5,
+.coroner-image6,
+.coroner-image7,
+.coroner-image8,
+.coroner-image9,
+.coroner-image10,
+.coroner-image11,
+.coroner-image12,
+.coroner-image13,
+.coroner-image14,
+.coroner-image15,
+.coroner-image16,
+.coroner-image17,
+.coroner-image18,
+.coroner-image19,
+.coroner-image20,
+.coroner-image21{
+	
 }
 /*boutique end*/
 
