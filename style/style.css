@@ -681,6 +681,7 @@ footer{
 	width: 100%;
 }
 .image-mask{
+	display:none;
 	top: 0;
 	left: 0;
 	position: fixed;
@@ -690,14 +691,15 @@ footer{
 }
 .image-container{
 	position: relative;
-	width: 500px;
-	height: 510px;
+	padding:10px;
+	width:520px;
+	height:400px;
 	margin: 130px auto;
 	border-radius: 6px;
 	background-color: #fff;
 }
-.image-container::before{
-	content: '';
+.image-container .close{
+	cursor:pointer;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -733,6 +735,91 @@ footer{
 	background-color: #576574;
 	margin: 26px 22px;
 	border-radius: 4px;
+	cursor:pointer;
+}
+.coroner-image1{
+	background:url(/images/corner/1.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image2{
+	background:url(/images/corner/2.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image3{
+	background:url(/images/corner/3.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image4{
+	background:url(/images/corner/4.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image5{
+	background:url(/images/corner/5.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image6{
+	background:url(/images/corner/6.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image7{
+	background:url(/images/corner/7.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image8{
+	background:url(/images/corner/8.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image9{
+	background:url(/images/corner/9.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image10{
+	background:url(/images/corner/10.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image11{
+	background:url(/images/corner/11.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image12{
+	background:url(/images/corner/12.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image13{
+	background:url(/images/corner/13.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image14{
+	background:url(/images/corner/14.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image15{
+	background:url(/images/corner/15.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image16{
+	background:url(/images/corner/16.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image17{
+	background:url(/images/corner/17.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image18{
+	background:url(/images/corner/18.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image19{
+	background:url(/images/corner/19.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image20{
+	background:url(/images/corner/20.jpg) no-repeat center;
+    background-size: cover;
+}
+.coroner-image21{
+	background:url(/images/corner/21.jpg) no-repeat center;
+    background-size: cover;
 }
 /*boutique end*/
 

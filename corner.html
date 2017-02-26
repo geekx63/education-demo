@@ -34,99 +34,99 @@
         <table>
             <tr>
                 <td>
-                    <div class="coroner-image1">
+                    <div class="coroner-image21"  data-image="/images/corner/21.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image2">
+                    <div class="coroner-image2"  data-image="/images/corner/2.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image3">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="coroner-image4">
-                    </div>
-                </td>
-                <td>
-                    <div class="coroner-image5">
-                    </div>
-                </td>
-                <td>
-                    <div class="coroner-image6">
+                    <div class="coroner-image3"  data-image="/images/corner/3.jpg">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="coroner-image7">
+                    <div class="coroner-image4"  data-image="/images/corner/4.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image8">
+                    <div class="coroner-image5"  data-image="/images/corner/5.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image9">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="coroner-image10">
-                    </div>
-                </td>
-                <td>
-                    <div class="coroner-image11">
-                    </div>
-                </td>
-                <td>
-                    <div class="coroner-image12">
+                    <div class="coroner-image6"  data-image="/images/corner/6.jpg">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="coroner-image13">
+                    <div class="coroner-image7"  data-image="/images/corner/7.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image14">
+                    <div class="coroner-image8"  data-image="/images/corner/8.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image15">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="coroner-image16">
-                    </div>
-                </td>
-                <td>
-                    <div class="coroner-image17">
-                    </div>
-                </td>
-                <td>
-                    <div class="coroner-image18">
+                    <div class="coroner-image9"  data-image="/images/corner/9.jpg">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="coroner-image19">
+                    <div class="coroner-image10"  data-image="/images/corner/10.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image20">
+                    <div class="coroner-image11"  data-image="/images/corner/11.jpg">
                     </div>
                 </td>
                 <td>
-                    <div class="coroner-image21">
+                    <div class="coroner-image12"  data-image="/images/corner/12.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="coroner-image13"  data-image="/images/corner/13.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image14"  data-image="/images/corner/14.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image15"  data-image="/images/corner/15.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="coroner-image16"  data-image="/images/corner/16.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image17"  data-image="/images/corner/17.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image18"  data-image="/images/corner/18.jpg">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="coroner-image19"  data-image="/images/corner/19.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image20"  data-image="/images/corner/20.jpg">
+                    </div>
+                </td>
+                <td>
+                    <div class="coroner-image21"  data-image="/images/corner/21.jpg">
                     </div>
                 </td>
             </tr>
@@ -134,7 +134,8 @@
     </div>
     <div class="image-mask">
         <div class="image-container">
-            
+            <span class="close"></span>
+            <!--<img width="100%" height="100%" src="/images/corner/2.jpg">-->
         </div>
     </div>
     <footer>
@@ -150,7 +151,15 @@
             </ul>
         </div>
     </footer>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript">
+        $('.coroner-section-container td>div').click(function(){
+            $('.image-container').css('background','#fff url('+$(this).attr('data-image')+') no-repeat center'),
+            $('.image-mask').fadeIn();
+        })
+        $('.image-container .close').click(function(){
+            $('.image-mask').fadeOut();
+        })
     </script>
   </body>
 </html>
