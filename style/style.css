@@ -140,6 +140,10 @@ header{
 	background: url(../images/banner.png) no-repeat 0 center;
 	background-size: cover;
 }
+.banner-image-2{
+	background: url(../images/banner2.jpg) no-repeat 0 center;
+	background-size: cover;
+}
 .banner-content-1{
 	font-family:Henlvetica,Regular,Arial,'Times New Roman',"MicrosoftJhengHei",华文细黑,STHeiti;
 	text-align: center;
@@ -883,7 +887,7 @@ footer{
 	.boutique-item-2.active .triangle{
 		left: 154px;
 	}
-	.boutique-item-2.active .triangle{
+	.boutique-item-3.active .triangle{
 		left: 173px;
 	}
 	.boutique-section-container{
