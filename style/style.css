@@ -383,6 +383,9 @@ header{
 	width: 330px;
     vertical-align: top;
 }
+.sub-title.width2{
+	width: 270px;
+}
 footer{
 	height: 117px;
 	background-color: #2d3f51;
