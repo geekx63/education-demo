@@ -611,21 +611,75 @@ footer{
 	background-size: cover;
 	height: 400px;
 }
+.boutique-list-container{
+	width: 1200px;
+	margin: 80px auto 55px auto;
+	position: relative;
+}
+.btn-prev,.btn-next{
+	cursor: pointer;
+	position: absolute;
+	width: 28px;
+    height: 56px;
+	background-color: rgba(9, 60, 113, .9);
+	background-image:none;
+	top: 0;
+}
+.btn-prev{
+	left: -28px;
+}
+.btn-next{
+	right: -28px;
+}
+.btn-prev:after, .btn-next:after{
+	content: "";
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	border-style: solid;
+	border-top-width: 2px;
+	border-left-width: 2px;
+	border-right: 0;
+	border-bottom: 0;
+	border-color: #fff;
+	top:21px;
+}
+.btn-prev:after{
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); 	/* IE 9 */
+	-moz-transform:rotate(-45deg); 	/* Firefox */
+	-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-45deg);
+	left: 10px;
+}
+.btn-next:after{
+	transform:rotate(135deg);
+	-ms-transform:rotate(135deg); 	/* IE 9 */
+	-moz-transform:rotate(135deg); 	/* Firefox */
+	-webkit-transform:rotate(135deg); /* Safari 和 Chrome */
+	-o-transform:rotate(135deg); 
+	right:10px;
+}
 .boutique-list{
 	width: 1200px;
 	padding-left: 0;
-	padding-bottom: 20px;
-	margin: 80px auto 55px auto;
+	margin: 0 auto 55px auto;
 	list-style: none;
 	border-bottom: solid 1px #eaeaea;
 }
 .boutique-item{
 	display: inline-block;
-	font-size: 26px;
+	text-align: center;
+	font-size: 24px;
 	color: #093c71;
 	width: 400px;
 	position: relative;
 	cursor: pointer;
+}
+.boutique-item>div{
+	display: inline-block;
+	padding-bottom: 20px;
+	position: relative;
 }
 .boutique-item.active .triangle{
 	position: absolute;
@@ -633,38 +687,19 @@ footer{
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
-    bottom: -15px;
-    left: 105px;
+	left: 50%;
+	bottom: 5px;
+	margin-left: -8px;
 }
-.boutique-item-2{
-	text-align: center;
-}
-.boutique-item-3{
-	text-align: right;
-}
-.boutique-item.active::after{
+
+.boutique-item.active>div::after{
 	content: '';
     position: absolute;
     height: 5px;
-    width: 234px;
+    width: 100%;
     background-color: #093c71;
     left: 0;
-    bottom: -20px;
-}
-.boutique-item-2.active .triangle{
-	left: 194px;
-}
-.boutique-item-2.active::after{
-	width: 271px;
-    left: 66px;
-}
-.boutique-item-3.active .triangle{
-	left: 245px;
-}
-.boutique-item-3.active::after{
-	width: 286px;
-	right: 0;
-	left: inherit;
+    bottom: 0;
 }
 .boutique-section-container{
 	width: 1200px;
@@ -894,6 +929,9 @@ footer{
 		width: 980px;
 	}
 	.visa-section-container{
+		width: 980px;
+	}
+	.boutique-list-container{
 		width: 980px;
 	}
 	.boutique-list{
