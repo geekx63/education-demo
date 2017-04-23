@@ -500,6 +500,12 @@ footer{
 	height: 375px;
 	margin: 25px 0 33px 0;
 }
+.school-image-ropet{
+	background: url(../images/ropet.jpg) no-repeat 0 center;
+	background-size: cover;
+	height: 375px;
+	margin: 25px 0 33px 0;
+}
 .school-text{
 	font-size: 16px;
 	color: #6b6b6b;
